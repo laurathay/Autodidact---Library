@@ -1,0 +1,47 @@
+
+.app {
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 2em 3em;
+  transform: scale(1);
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+
+  @keyframes fadeInUp {
+      0% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 500%, 0);
+      }
+      100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+      }
+  }
+
+.a-cacher-au-debut{
+  margin-left: 5em;
+}
+
+.fadeIn {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+-webkit-animation-duration: 1s;
+animation-duration: 1.5s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
