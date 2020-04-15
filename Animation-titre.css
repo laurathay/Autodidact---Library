@@ -28,11 +28,15 @@
       }
   }
 
+.margin-left{
+  margin-left: 18em;
+}
 .a-cacher-au-debut{
-  margin-left: 5em;
+  margin-left: 10em;
 }
 
 .fadeIn {
+animation-delay: .5s;
 -webkit-animation-name: fadeIn;
 animation-name: fadeIn;
 -webkit-animation-duration: 1s;
