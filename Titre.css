@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+#intro_color{
+  margin-left: 2em;
+  margin-top: 5em;
+  text-align: center;
+}
+
+span.color1, span.color2, span.color3, span.color4 {
+    color: #FFD23F;
+}
+span.color1, span.color2, span.color3, span.color4 {
+    font-size: 5em;
+    line-height: 1em;
+    font-weight: 5em;
+    transition: color 1s;
+    padding: 0;
+}
+
+span.color1:hover{
+	color: pink;
+}
+
+span.color3:hover{
+	color: steelblue;
+}
+
+span.color2:hover{
+	color: #8C271E;
+}
+
+span.color4:hover{
+	color: seagreen;
+}
+
+#intro_color span{
+  display:inline-block;
+}
+
+/* pour que le texte soi au dessus de l'image */
+
+img{
+  width:100%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+h1 {
+  font-size: inherit;
+  font-family: 'Monoton', cursive;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
