@@ -1,0 +1,9 @@
+html, body {height:100%;margin:0;}
+span {position:fixed;width:100%;text-align:center;background:#fff;}
+a {display:inline-block;vertical-align:top;margin:0 30px;text-decoration:none;font:700 .95em/40px sans-serif;color:#262626;transition:all .4s ease;}
+a:hover {color:#09f;}
+div {height:100%;background:#A30029;}
+div+div {background:#235F76;}
+div+div+div {background:#489660;}
+div+div+div+div {background:#7A7971;}
+div+div+div+div+div {background:#6A771F;}
