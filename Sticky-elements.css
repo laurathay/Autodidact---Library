@@ -68,3 +68,7 @@ article,
         display: none;
     }
 }
+
+img{
+  width: 100%;
+}
