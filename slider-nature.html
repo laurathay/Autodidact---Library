@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Slider Nature</title>
+    <link rel="stylesheet" href="sliders-nature.css">
+  </head>
+  <body>
+    <body ng-app='app' ng-controller='MainController'>
+  <main id='main'>
+    <section id='one'>
+      <div class='pane'
+           ng-repeat='forest in forests track by $index'
+           ng-if="$index == active">
+          <main>
+              <h1 ng-style="{'background-image' : 'url(' + forest.img + ')'}">{{ forest.rank }}</h1>
+          </main>
+          <div class="bg" ng-style="{'background-image' : 'url(' + forest.img + ')'}"></div>
+      </div>
+    </section>
+    <section id='two'>
+      <div class='pane'
+           ng-repeat='forest in forests track by $index'
+           ng-class="{ 'active' : $index == active }"
+           ng-if="$index == active">
+        <main>
+            <h2>{{ forest.name }}</h2>
+            <p>{{ forest.desc }}</p>
+            <p class='sub'>{{ forest.location }}</p>
+        </main>
+      </div>
+    </section>
+  </main>
+  <nav id='nav'>
+    <ul>
+      <li class="previous" ng-show="active > 0">
+        <a href='#' ng-click="previous()">
+          <span class='icon icon_arrow-left'></span>
+        </a>
+      </li>
+      <li class='numbers'>
+        <a href='#' ng-repeat="forest in forests track by $index" ng-click="setActive($index)" ng-class="{'active' : $index == active}">
+          {{ $index + 1 }}
+        </a>
+      </li>
+      <li class="next" ng-show="active + 1 < forests.length">
+        <a href='#' ng-click="next()">
+          <span class='icon icon_arrow-right'></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+    <div id="preloader">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/sagano.jpg" alt="" />
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/sequoia.jpg" alt="" />
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/redwoods.jpg" alt="" />
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/black-forest.jpg" alt="" />
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/crooked-forest.jpg" alt="" />
+    </div>
+
+  <script src="silderNature.js" charset="utf-8">
+  </body>
+</html>
