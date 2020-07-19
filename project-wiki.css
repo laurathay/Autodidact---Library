@@ -1,0 +1,101 @@
+body{
+   font-size: 100%
+}
+
+.SmallerPic {
+  width: 80%;
+  opacity: 0.1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topspace {
+  margin-top: 10%;
+}
+
+.jumbotron {
+  max-width: 720px;
+  background: #f6f5c5;
+  border:1px solid #f6f5c5;
+}
+
+.form-control {
+  color:#db886d;
+  border: 1px solid;
+  border-color:#E4E46D;
+  font-family: 'Poiret One', cursive;
+  font-size:1.5em;
+
+}
+
+.form-control:focus {
+  border-color:#E4E46D;
+}
+
+.btn-default, .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:focus {
+  border-color:#E4E46D;
+  outline:0;
+}
+.glyphicon, .btn-default, .btn-default:hover, .btn-default:active, .btn-default:focus, .btn-default:active:focus {
+  color:#FCBB7B;
+  background-color:white;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#FBB7A1 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:#FBB7A1 !important;
+   opacity:1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:#FBB7A1 !important;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:#FBB7A1 !important;
+}
+
+h1{
+  color:#AD7432; /*#85763E*/
+  font-family: 'Poiret One', cursive,serif;
+  font-size:5em;
+}
+
+h3{
+  color:#AD9332;
+  font-family: 'Poiret One', cursive,serif;
+  font-size:3em;
+}
+
+#result{
+color:#a3786a;
+font-family:'Alegreya', serif;
+font-size:1.5em;
+}
+
+#result a{
+  color:#f2a085;
+  font-size:1.2em;
+ }
+
+.intro{
+ color:#c6770f;
+ }
+
+#intro{
+ color:#877359;
+ font-size:2em;
+ font-family:'Poiret One', cursive;
+}
+
+
+.footerText{
+  text-align:center;
+  display:block;
+  font-family:'Poiret One',cursive;
+  font-size:1.5em;
+  color:#AD7432;
+}
