@@ -92,5 +92,52 @@
 
 .wrapper .profile .tags_wrap span.tag{
       background: #e4e9ef;
-      
+      padding: 10px 15px;
+      display: inline-block;
+      border-radius: 10px;
+      margin: 5px;
+      font-size: 14px;
+}
+
+.wrapper .profile_counts{
+      background: #fff;
+      padding: 25px;
+      width: 175px;
+      border-radius: 10px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.wrapper .profile_counts .profile_counts_wrap{
+      padding: 30px 0;
+      border-bottom: 1px solid #cccccc;
+}
+
+.wrapper .profile_counts .profile_counts_wrap:first-child{
+      padding-top: 0;
+}
+
+.wrapper .profile_counts .profile_counts_wrap:last-child{
+      padding-bottom: 0;
+      border-bottom: 0;
+}
+
+.wrapper .profile_counts .profile_counts_wrap .item{
+      padding: 20px 10px;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+}
+
+.wrapper .profile_counts .profile_counts_wrap .item:hover{
+      background: #e4e9ef;
+}
+
+.wrapper .profile_counts .profile_counts_wrap .item .fas{
+      font-size: 30px;
+      margin-bottom: 20px;
+}
+
+.wrapper .profile_counts .profile_counts_wrap .item .title{
+      font-size: 14px;
 }
