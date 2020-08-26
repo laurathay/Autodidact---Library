@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700;900&display=swap');
+body{
+    font-family: 'Roboto Slab', serif;
+    background: #123;
+}
+h1{
+    font-size: 8rem;
+    color: #fff;
+    background: linear-gradient(90deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    background-size: 300%;
+    background-position: left;
+    background-clip: text;
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-bg-animation 10s infinite;
+}
+@keyframes text-bg-animation{
+    0%{background-position:0% 87%}
+    50%{background-position:100% 14%}
+    100%{background-position:0% 87%}
+}
