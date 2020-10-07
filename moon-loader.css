@@ -1,0 +1,264 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  --color-bg: #fafafa;
+  --color-primary: #263238;
+  --color-secondary: #ef5350;
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Cardo", serif;
+  --p-font-size: 0.9em;
+  --h1-font-size: 2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 100vw;
+  color: var(--color-primary);
+  background: #c6ffdd;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(135deg, #fbd786, #c6ffdd);
+  background: linear-gradient(-45deg, #fbd786, #c6ffdd);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+*::-moz-selection {
+  background-color: #c6ffdd78;
+}
+
+*::selection {
+  background-color: #c6ffdd78;
+}
+
+.container {
+  position: relative;
+  margin: 3rem;
+  max-width: 1200px;
+  text-align: justify;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50.05%, rgba(128, 128, 128, 0)), color-stop(50.1%, gray), color-stop(50.2%, rgba(128, 128, 128, 0)));
+    background-image: -o-linear-gradient(left, rgba(128, 128, 128, 0) 50.05%, gray 50.1% 50.15%, rgba(128, 128, 128, 0) 50.2%);
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0) 50.05%, gray 50.1% 50.15%, rgba(128, 128, 128, 0) 50.2%);
+  }
+}
+.article-content {
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .article-content {
+    -ms-grid-columns: 1fr 3rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+p {
+  font-family: var(--font-primary);
+  font-size: var(--p-font-size);
+  margin-top: 1rem;
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  font-size: var(--h1-font-size);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.subheading {
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.7em;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.author {
+  font-family: var(--h1-font-size);
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.page {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    -ms-grid-columns: calc(100% / 3 - 1rem) 1rem calc(100% / 3 - 1rem) 1rem calc(100% / 3 - 1rem);
+    grid-template-columns: repeat(3, calc(100% / 3 - 1rem));
+    gap: 1rem;
+    -ms-flex-line-pack: start;
+    align-content: start;
+  }
+
+  .page2 {
+    padding-top: 1.5em;
+    -ms-grid-rows: auto [3];
+    grid-template-rows: repeat(3, auto);
+  }
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
+  grid-column: 1/-1;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: min(1rem, 1vw) solid white;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem lightslategrey;
+  box-shadow: 0.5rem 0.5rem 1rem lightslategrey;
+}
+
+@media screen and (min-width: 800px) {
+  .header img {
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    margin-left: -3.5rem;
+    margin-top: -4rem;
+  }
+}
+.page2 img {
+  grid-column: 1/-1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-top: 1.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .page2 img {
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    margin-left: 3.5rem;
+  }
+}
+.article-aside {
+  position: relative;
+  grid-column: 1/-1;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 1.1em;
+  font-family: var(--font-secondary);
+  border-top: 1px solid var(--color-primary);
+}
+
+@media screen and (min-width: 800px) {
+  .article-aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: none;
+  }
+
+  .article-aside p:first-child::after,
+.article-aside p:last-child::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    top: 0.5rem;
+    border-top: 1px solid var(--color-primary);
+  }
+}
+.article-aside p {
+  margin: 0;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  width: 50%;
+  height: 1px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.article-aside p:last-child::after {
+  right: 2rem;
+}
+
+.article-aside p:first-child::after {
+  left: 2rem;
+}
+
+.article-aside a {
+  color: var(--color-secondary);
+}
+
+.page1 p:nth-child(2):first-letter,
+.page2 p:first-child::first-letter {
+  font-size: 4em;
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+  margin-right: 1px;
+}
+
+.container::before {
+  z-index: 10;
+  content: "Beauty Tips";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  padding: 1em;
+  background-color: var(--color-secondary);
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .container::before {
+    left: 75%;
+  }
+}
